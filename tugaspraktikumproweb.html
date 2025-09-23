@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Perjalanan</title>
+</head>
+<body>
+    <center>
+        <h1>Formulir Pendaftaran Perjalanan</h1>
+        
+        <form action="#" method="post">
+            <table width="80%" cellpadding="8" border="0">
+                <!-- Nama -->
+                <tr>
+                    <td width="30%"><label for="nama">Nama Lengkap:</label></td>
+                    <td><input type="text" id="nama" name="nama" size="40" required></td>
+                </tr>
+                
+                <!-- Email -->
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" size="40" required></td>
+                </tr>
+                
+                <!-- Nomor HP -->
+                <tr>
+                    <td><label for="nomor_hp">Nomor HP:</label></td>
+                    <td><input type="number" id="nomor_hp" name="nomor_hp" size="40" required></td>
+                </tr>
+                
+                <!-- Destinasi -->
+                <tr>
+                    <td><label for="destinasi">Destinasi:</label></td>
+                    <td>
+                        <select name="destinasi" id="destinasi" required>
+                            <option value="">-- Pilih Destinasi --</option>
+                            <option value="medan">Medan</option>
+                            <option value="pematang_siantar">Pematang Siantar</option>
+                            <option value="prapat">Prapat</option>
+                            <option value="padang">Padang</option>
+                            <option value="bukittinggi">Bukittinggi</option>
+                            <option value="pekanbaru">Pekanbaru</option>
+                            <option value="banda_aceh">Banda Aceh</option>
+                            <option value="jakarta">Jakarta</option>
+                            <option value="semarang">Semarang</option>
+                            <option value="yogyakarta">Yogyakarta</option>
+                            <option value="surabaya">Surabaya</option>
+                            <option value="malang">Malang</option>
+                            <option value="denpasar">Denpasar</option>
+                            <option value="kupang">Kupang</option>
+                            <option value="makassar">Makassar</option>
+                            <option value="jayapura">Jayapura</option>
+                            <option value="timika">Timika</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <!-- Tanggal Berangkat -->
+                <tr>
+                    <td><label for="tanggal_berangkat">Tanggal Berangkat:</label></td>
+                    <td><input type="date" id="tanggal_berangkat" name="tanggal_berangkat" required></td>
+                </tr>
+                
+                <!-- Waktu Berangkat -->
+                <tr>
+                    <td><label for="waktu_berangkat">Waktu Berangkat:</label></td>
+                    <td><input type="time" id="waktu_berangkat" name="waktu_berangkat" required></td>
+                </tr>
+                
+                <!-- Jumlah Penumpang -->
+                <tr>
+                    <td><label for="jumlah_penumpang">Jumlah Penumpang:</label></td>
+                    <td><input type="number" id="jumlah_penumpang" name="jumlah_penumpang" min="1" required></td>
+                </tr>
+                
+                <!-- Pilihan Armada -->
+                <tr>
+                    <td><label for="armada">Pilihan Armada:</label></td>
+                    <td>
+                        <select name="armada" id="armada" required>
+                            <option value="">-- Pilih Armada --</option>
+                            <option value="hiace">Mobil Hiace</option>
+                            <option value="bus_laksana">Bus Laksana</option>
+                            <option value="kijang_innova">Kijang Innova</option>
+                            <option value="mercedes_benz">Mercedes Benz 10000 OH</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <!-- Layanan Tambahan -->
+                <tr>
+                    <td><label for="layanan">Layanan Tambahan:</label></td>
+                    <td>
+                        <select name="layanan" id="layanan" required>
+                            <option value="">-- Pilih Layanan --</option>
+                            <option value="makanan">Makanan</option>
+                            <option value="minuman">Minuman</option>
+                            <option value="selimut">Selimut</option>
+                            <option value="bantal">Bantal</option>
+                            <option value="tidak_ada">Tidak Ada</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <!-- Validasi Kesiapan Supir -->
+                <tr>
+                    <td colspan="2">
+                        <h3>Validasi Kesiapan Supir</h3>
+                        <table width="100%" border="1" cellpadding="8">
+                            <tr>
+                                <th width="10%">No</th>
+                                <th width="70%">Kondisi</th>
+                                <th width="20%">Status</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Supir tidak dalam kondisi ngantuk berat</td>
+                                <td align="center"><input type="checkbox" name="kondisi1" required></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Supir dalam keadaan sehat</td>
+                                <td align="center"><input type="checkbox" name="kondisi2" required></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Supir tidak dalam pengaruh obat terlarang dan minuman yang memabukkan</td>
+                                <td align="center"><input type="checkbox" name="kondisi3" required></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <!-- Upload KTP -->
+                <tr>
+                    <td><label for="ktp">Upload KTP (JPG, PNG, PDF):</label></td>
+                    <td><input type="file" id="ktp" name="ktp" accept=".jpg,.jpeg,.png,.pdf" required></td>
+                </tr>
+                
+                <!-- Tombol Daftar -->
+                <tr>
+                    <td colspan="2" align="center">
+                        <br>
+                        <button type="submit">Daftar</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
