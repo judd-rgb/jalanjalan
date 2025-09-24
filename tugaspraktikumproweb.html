@@ -7,31 +7,31 @@
 </head>
 <body>
     <center>
-        <h1>Formulir Pendaftaran Perjalanan</h1>
+        <h1>Formulir Manajemen Supir</h1>
         
         <form action="#" method="post">
             <table width="80%" cellpadding="8" border="0">
                 <!-- Nama -->
                 <tr>
-                    <td width="30%"><label for="nama">Nama Lengkap:</label></td>
+                    <td width="30%"><label for="nama">Nama Supir:</label></td>
                     <td><input type="text" id="nama" name="nama" size="40" required></td>
                 </tr>
                 
                 <!-- Email -->
                 <tr>
-                    <td><label for="email">Email:</label></td>
+                    <td><label for="email">Email Supir:</label></td>
                     <td><input type="email" id="email" name="email" size="40" required></td>
                 </tr>
                 
                 <!-- Nomor HP -->
                 <tr>
-                    <td><label for="nomor_hp">Nomor HP:</label></td>
+                    <td><label for="nomor_hp">Nomor HP Supir:</label></td>
                     <td><input type="number" id="nomor_hp" name="nomor_hp" size="40" required></td>
                 </tr>
                 
                 <!-- Destinasi -->
                 <tr>
-                    <td><label for="destinasi">Destinasi:</label></td>
+                    <td><label for="destinasi">Destinasi Supir:</label></td>
                     <td>
                         <select name="destinasi" id="destinasi" required>
                             <option value="">-- Pilih Destinasi --</option>
@@ -88,54 +88,39 @@
                     </td>
                 </tr>
                 
-                <!-- Layanan Tambahan -->
-                <tr>
-                    <td><label for="layanan">Layanan Tambahan:</label></td>
-                    <td>
-                        <select name="layanan" id="layanan" required>
-                            <option value="">-- Pilih Layanan --</option>
-                            <option value="makanan">Makanan</option>
-                            <option value="minuman">Minuman</option>
-                            <option value="selimut">Selimut</option>
-                            <option value="bantal">Bantal</option>
-                            <option value="tidak_ada">Tidak Ada</option>
-                        </select>
-                    </td>
-                </tr>
-                
                 <!-- Validasi Kesiapan Supir -->
                 <tr>
                     <td colspan="2">
-                        <h3>Validasi Kesiapan Supir</h3>
+                        <h3>Validasi Kesiapan</h3>
                         <table width="100%" border="1" cellpadding="8">
                             <tr>
-                                <th width="10%">No</th>
-                                <th width="70%">Kondisi</th>
+                                <th width="5%">No</th>
+                                <th width="75%">Kondisi</th>
                                 <th width="20%">Status</th>
                             </tr>
                             <tr>
                                 <td>1</td>
-                                <td>Supir tidak dalam kondisi ngantuk berat</td>
+                                <td>Tidak dalam kondisi ngantuk berat</td>
                                 <td align="center"><input type="checkbox" name="kondisi1" required></td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>Supir dalam keadaan sehat</td>
+                                <td>Dalam keadaan sehat</td>
                                 <td align="center"><input type="checkbox" name="kondisi2" required></td>
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>Supir tidak dalam pengaruh obat terlarang dan minuman yang memabukkan</td>
+                                <td>Tidak dalam pengaruh obat terlarang dan minuman yang memabukkan</td>
                                 <td align="center"><input type="checkbox" name="kondisi3" required></td>
                             </tr>
                         </table>
                     </td>
                 </tr>
                 
-                <!-- Upload KTP -->
+                <!-- Upload SURAT -->
                 <tr>
-                    <td><label for="ktp">Upload KTP (JPG, PNG, PDF):</label></td>
-                    <td><input type="file" id="ktp" name="ktp" accept=".jpg,.jpeg,.png,.pdf" required></td>
+                    <td><label for="surat">Upload Surat Kerja:</label></td>
+                    <td><input type="file" id="surat" name="surat" accept=".jpg,.jpeg,.png,.pdf" required></td>
                 </tr>
                 
                 <!-- Tombol Daftar -->
